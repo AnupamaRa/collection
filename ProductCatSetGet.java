@@ -84,6 +84,7 @@ public class ProductCatSetGet {
 
         return catArr; // function ko call kar lie h to ye function return type jo de rha h vo catArr;
     }
+    
 
     /**
      * pick random list values from a given list
@@ -126,15 +127,62 @@ public class ProductCatSetGet {
     		pdt.setAvailable(avail); //{ true}
     		pdtsArr.add(pdt);  //[ {1,"anu0",["transport","sports"],34.6,true }]
     		
+    		
     	}
     	
     	System.out.println(pdtNum);//koe v kam nhi h
     	System.out.println(pdtsArr);// koe kam ni h yha pe iska
     	return pdtsArr;// ye phr se loop ko chalane jaege
-    	
+    	/*
+    	 * [ {"id" : 1,"name" :"anu0","category" : ["transport","sports"], "price" : 34.6, "available": true },
+    	 *  {"id" : 2,"name" :"anu1","category" : ["transport","sports","electronics"], "price" : 9999, "available": false }]
+    	 */
     	
     	
     }
+    /*
+     *  [{
+ 	"transport": [{
+ 			"id": 1,
+ 			"name": "anu0",
+ 			"category": ["transport", "sports"],
+ 			"price": 34.6,
+ 			"available": true
+ 		},
+ 		{
+ 			"id": 2,
+ 			"name": "anu1",
+ 			"category": ["transport", "sports", "electronics"],
+ 			"price": 9999,
+ 			"available": false
+ 		}
+ 	],
+
+ 	"sports": [{
+ 			"id": 1,
+ 			"name": "anu0",
+ 			"category": ["transport", "sports"],
+ 			"price": 34.6,
+ 			"available": true
+ 		},
+ 		{
+ 			"id": 2,
+ 			"name": "anu1",
+ 			"category": ["transport", "sports", "electronics"],
+ 			"price": 9999,
+ 			"available": false
+ 		}
+ 	],
+ 	"electronics": [{
+ 		"id": 2,
+ 		"name": "anu1",
+ 		"category": ["transport", "sports", "electronics"],
+ 		"price": 9999,
+ 		"available": false
+ 	}]
+
+ }]
+     */
     
     static void printProducts(ArrayList<ProductCatSetGet> pdts) {
         int count = 1;
@@ -173,7 +221,7 @@ public class ProductCatSetGet {
         System.out.println(pdts);
         printProducts(pdts);
         
-        
+       
         
     }
 
